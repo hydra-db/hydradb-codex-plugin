@@ -7,16 +7,6 @@ It recalls relevant notes when you send a prompt, syncs your markdown docs into
 HydraDB, and saves conversations as durable memories - the same behavior as the
 HydraDB Claude Code plugin, on the same underlying engine (`scripts/plugin.mjs`).
 
-## What's Codex-specific here
-
-- **Manifest:** `plugin.json` at the repo root (Agent Plugins schema), plus a
-  `.codex-plugin/plugin.json` compatibility overlay.
-- **Hooks:** `hooks/hooks.json` - same events as Claude Code (`SessionStart`,
-  `UserPromptSubmit`, `PostToolUse`, `Stop`), using `${PLUGIN_ROOT}`.
-- **Commands:** `skills/*/SKILL.md`, unchanged from the Claude Code plugin.
-
-Everything else (`scripts/`, config, API docs) is shared as-is.
-
 ## Prerequisites
 
 - Node.js >= 18 and npm
