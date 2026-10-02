@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hydradb",
+  "version": "1.1.0",
+  "description": "Secure HydraDB automation for Codex with workspace sync, prompt recall, and conversation capture.",
+  "author": {
+    "name": "HydraDB",
+    "email": "support@hydradb.com",
+    "url": "https://hydradb.com"
+  },
+  "homepage": "https://docs.hydradb.com/",
+  "repository": "https://github.com/hydra-db/hydradb-codex",
+  "license": "Apache-2.0",
+  "keywords": [
+    "hydradb",
+    "memory",
+    "retrieval",
+    "codex",
+    "knowledge-base"
+  ],
+  "extensions": {
+    "com.openai": {
+      "hooks": "./hooks/hooks.json",
+      "interface": {
+        "displayName": "HydraDB",
+        "shortDescription": "Persistent memory for Codex, powered by HydraDB.",
+        "longDescription": "Gives Codex persistent, cross-session memory: recalls relevant notes at prompt time, syncs your markdown docs, and captures conversations as durable memories.",
+        "developerName": "HydraDB",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "brandColor": "#10A37F"
+      }
+    }
+  }
+}
