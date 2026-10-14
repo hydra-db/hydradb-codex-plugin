@@ -2,5 +2,13 @@
   "name": "hydradb",
   "version": "1.1.0",
   "description": "Secure HydraDB automation for Codex with workspace sync, prompt recall, and conversation capture.",
-  "hooks": "./hooks/hooks.json"
+  "author": {
+    "name": "HydraDB"
+  },
+  "hooks": "./hooks/hooks.json",
+  "skills": "./skills",
+  "interface": {
+    "supportURL": "https://github.com/hydra-db/hydradb-codex-plugin/issues",
+    "websiteURL": "https://docs.hydradb.com/plugins/codex"
+  }
 }
